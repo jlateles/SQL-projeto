@@ -32,7 +32,7 @@ Este repositório vai acompanhar:
 - Modificações e anotações de aprendizado
 
 ## 🛠 Como Utilizar
-1. **Clone este repositório**:
+1. **Clone o repositório**:
    ```bash
    git clone https://github.com/jlateles/SQL-projeto.git
 2. Abra os scripts SQL no MySQL Workbench ou rode-os via linha de comando.
