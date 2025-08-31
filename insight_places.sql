@@ -86,7 +86,7 @@ FROM reservas
 GROUP BY cliente_id
 ORDER BY media_dias_estadia DESC;
 
-/*Agora a empresa solicitou os dados para saber quem são os top 10 locadores que possuem hotéis cadastrados*/
+/*Consulta para saber quem são os top 10 locadores, dos que possuem hotéis cadastrados*/
 
 SELECT p.nome AS nome_proprietario, COUNT(h.hospedagem_id) AS total_hospedagens_ativas
 FROM proprietarios p
@@ -96,7 +96,7 @@ GROUP BY p.nome
 ORDER BY total_hospedagens_ativas DESC
 LIMIT 10;
 
-/*Pensando em uma limpeza no sistema foi nos solicitado os proprietários que possuem e quantos possuem hotéis e hospedagens desativadas na plataforma*/
+/*Precisando fazer uma limpeza no sistema foi pedido os proprietários possuem (e quantos possuem) hospedagens desativadas na plataforma*/
 
 SELECT p.nome AS nome_proprietario, COUNT(*) AS total_hospedagens_inativas
 FROM proprietarios p
@@ -105,7 +105,7 @@ WHERE h.ativo = 0
 GROUP BY p.nome
 ORDER BY total_hospedagens_inativas  DESC;
 
-/*Agora faremos uma busca para saber em qual mes do ano temos mais reservas*/
+/*Busca para saber em qual mês do ano têm mais reservas*/
 
 SELECT YEAR(data_inicio) AS ano,
 MONTH(data_inicio) AS mes,
@@ -114,7 +114,7 @@ FROM reservas
 GROUP BY ano, mes
 ORDER BY total_reservas DESC;
 
-/*Agora vamos fazer alterações solicitadas pelo proprietário*/
+/*Fazendo algumas alterações*/
 
 ALTER TABLE proprietarios ADD COLUMN qtd_hospedagens INT;
 
@@ -138,6 +138,7 @@ WHERE hospedagem_id IN('10000', '1001');
 
 DELETE FROM hospedagens
 WHERE hospedagem_id IN('10000', '1001');
+
 
 
 
