@@ -1,7 +1,7 @@
 # SQL - Projeto Insight Places
 
 Este repositório contém meu progresso de estudos e o projeto desenvolvido durante o curso **"MySQL: Conhecendo a Ferramenta"** da Alura.  
-O curso aborda desde a **instalação do MySQL**, utilização via linha de comando e **MySQL Workbench**, até a **criação de bancos de dados, tabelas, consultas SQL** e modificações estruturais.
+O curso aborda desde a instalação do MySQL, utilização via linha de comando e MySQL Workbench, até a criação de bancos de dados, tabelas, consultas SQL e modificações estruturais.
 
 ## Sobre o curso 🚀
 - Ferramenta: **MySQL**, um dos SGBDs mais utilizados no mercado.
@@ -30,16 +30,6 @@ Este repositório vai acompanhar:
 - Os scripts desenvolvidos durante o curso
 - Os desafios realizados (como a criação das tabelas adicionais)
 - Modificações e anotações de aprendizado
-
-## 🛠 Como Utilizar
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/jlateles/SQL-projeto.git
-2. Abra os scripts SQL no MySQL Workbench ou rode-os via linha de comando.
-3. Selecione o banco de dados:
-  `USE nome_do_banco;`
-4. Execute os scripts para criar as tabelas e inserir os dados.
-5. Explore as consultas e faça suas próprias análises!
 
 ## 📄 Licença
 Este repositório é apenas para fins de estudo e prática.
